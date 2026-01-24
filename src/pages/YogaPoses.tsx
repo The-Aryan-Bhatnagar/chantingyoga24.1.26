@@ -9,6 +9,12 @@ import catPose2 from "@/assets/poses/cat-pose-2.jpg";
 import crocodilePose2 from "@/assets/poses/crocodile-pose-2.jpg";
 import crocodilePose4 from "@/assets/poses/crocodile-pose-4.jpg";
 import crocodilePose from "@/assets/poses/crocodile-pose.jpg";
+import treePose from "@/assets/poses/tree-pose.jpg";
+import chairPose from "@/assets/poses/chair-pose.jpg";
+import shoulderPose from "@/assets/poses/shoulder-pose.jpg";
+import locustPose from "@/assets/poses/locust-pose.jpg";
+import mahaveerAsana1 from "@/assets/poses/mahaveer-asana-1.jpg";
+import mahaveerAsana2 from "@/assets/poses/mahaveer-asana-2.jpg";
 
 interface YogaPose {
   id: string;
@@ -145,6 +151,132 @@ const yogaPoses: YogaPose[] = [
       "Allow legs to fall open naturally",
       "Close your eyes and soften your entire body",
       "Observe the natural rise and fall of breath",
+    ],
+  },
+  {
+    id: "tree-pose",
+    name: "Tree Pose",
+    sanskritName: "Vrikshasana",
+    image: treePose,
+    description: "Tree Pose is a standing balance pose that strengthens the legs and core while improving focus and concentration. Like a tree rooted firmly in the earth, this pose cultivates stability and grace.",
+    benefits: [
+      "Improves balance and stability",
+      "Strengthens legs, ankles, and core",
+      "Opens the hips and stretches inner thighs",
+      "Enhances focus and concentration",
+      "Promotes a sense of grounding",
+    ],
+    steps: [
+      "Stand tall with feet together",
+      "Shift weight to your left foot",
+      "Place right foot on inner left thigh or calf (not on knee)",
+      "Bring hands to prayer position or raise overhead",
+      "Fix your gaze on a steady point and hold",
+    ],
+  },
+  {
+    id: "chair-pose",
+    name: "Chair Pose",
+    sanskritName: "Utkatasana",
+    image: chairPose,
+    description: "Chair Pose is a powerful standing pose that builds strength and heat in the body. As if sitting in an imaginary chair, this pose challenges your endurance while toning the legs and core.",
+    benefits: [
+      "Strengthens thighs, calves, and ankles",
+      "Tones the core and back muscles",
+      "Stimulates the heart and diaphragm",
+      "Builds stamina and endurance",
+      "Improves posture",
+    ],
+    steps: [
+      "Stand with feet hip-width apart",
+      "Bend knees and lower hips as if sitting back",
+      "Raise arms overhead alongside ears",
+      "Keep weight in heels and chest lifted",
+      "Hold for 5-10 breaths",
+    ],
+  },
+  {
+    id: "shoulder-pose",
+    name: "Shoulder Pose",
+    sanskritName: "Kandharasana",
+    image: shoulderPose,
+    description: "Shoulder Pose is a gentle backbend that opens the chest and strengthens the back. Also known as Bridge Pose, it creates a beautiful arch from shoulders to knees.",
+    benefits: [
+      "Strengthens the back and glutes",
+      "Opens chest and shoulders",
+      "Stretches the spine and hip flexors",
+      "Calms the brain and reduces anxiety",
+      "Improves digestion",
+    ],
+    steps: [
+      "Lie on your back with knees bent",
+      "Place feet flat on floor, hip-width apart",
+      "Press into feet and lift hips toward ceiling",
+      "Interlace hands under the back if comfortable",
+      "Hold and breathe deeply",
+    ],
+  },
+  {
+    id: "locust-pose",
+    name: "Locust Pose",
+    sanskritName: "Salabhasana Purna",
+    image: locustPose,
+    description: "Locust Pose is an energizing backbend that strengthens the entire back body. This full expression lifts both legs and arms, building strength in the posterior chain.",
+    benefits: [
+      "Strengthens the back, glutes, and legs",
+      "Improves posture",
+      "Stimulates abdominal organs",
+      "Helps relieve stress and fatigue",
+      "Prepares body for deeper backbends",
+    ],
+    steps: [
+      "Lie face down with arms alongside body",
+      "Forehead or chin rests on the mat",
+      "Inhale and lift head, chest, arms, and legs",
+      "Keep legs straight and together",
+      "Reach back through fingers and toes",
+    ],
+  },
+  {
+    id: "mahaveer-asana-1",
+    name: "Mahaveer Asana 1",
+    sanskritName: "Virabhadrasana",
+    image: mahaveerAsana1,
+    description: "Mahaveer Asana, also known as Warrior Pose, is a powerful standing pose that builds strength and confidence. Named after the fierce warrior Virabhadra, this pose embodies strength and courage.",
+    benefits: [
+      "Strengthens legs, ankles, and feet",
+      "Opens hips and chest",
+      "Builds stamina and concentration",
+      "Improves balance and stability",
+      "Energizes the entire body",
+    ],
+    steps: [
+      "Stand with feet wide apart",
+      "Turn right foot out 90 degrees",
+      "Bend right knee over ankle",
+      "Extend arms out to sides parallel to floor",
+      "Gaze over right fingertips and hold",
+    ],
+  },
+  {
+    id: "mahaveer-asana-2",
+    name: "Mahaveer Asana 2",
+    sanskritName: "Virabhadrasana",
+    image: mahaveerAsana2,
+    description: "This variation of Mahaveer Asana continues the warrior sequence with a different arm position. It maintains the powerful leg stance while challenging balance and focus.",
+    benefits: [
+      "Deepens hip opening",
+      "Strengthens the quadriceps",
+      "Improves mental focus",
+      "Builds core stability",
+      "Enhances body awareness",
+    ],
+    steps: [
+      "From Mahaveer Asana 1, maintain the leg position",
+      "Adjust arm position as shown",
+      "Keep the back leg strong and straight",
+      "Engage the core for stability",
+      "Breathe steadily and hold",
     ],
   },
 ];
