@@ -1,6 +1,8 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Play, Music, Video } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import { Play, Music, Video, ArrowRight } from "lucide-react";
 import mediaStudio from "@/assets/media-studio.jpg";
 import soundHealing from "@/assets/sound-healing.jpg";
 import audioMeditation from "@/assets/audio-meditation.jpg";
@@ -109,7 +111,7 @@ const Media = () => {
               <p className="text-muted-foreground">Learn about yoga, its benefits, and practices through expert guidance</p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {videos.map((video, index) => (
+              {videos.slice(0, 6).map((video, index) => (
                 <Card key={index} className="overflow-hidden hover-scale group">
                   <div className="relative aspect-video bg-muted">
                     <iframe
@@ -129,6 +131,14 @@ const Media = () => {
                 </Card>
               ))}
             </div>
+            <div className="text-center pt-6">
+              <Button asChild size="lg">
+                <Link to="/videos">
+                  View All Videos
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+            </div>
           </TabsContent>
 
           {/* Audio Tab */}
@@ -138,7 +148,7 @@ const Media = () => {
               <p className="text-muted-foreground">Listen to our curated chanting and meditation tracks for specific conditions</p>
             </div>
             <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-              {audioTracks.map((track, index) => (
+              {audioTracks.slice(0, 4).map((track, index) => (
                 <Card key={index} className="hover-scale">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2">
@@ -155,6 +165,14 @@ const Media = () => {
                   </CardContent>
                 </Card>
               ))}
+            </div>
+            <div className="text-center pt-6">
+              <Button asChild size="lg">
+                <Link to="/audios">
+                  View All Audio Sessions
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
             </div>
           </TabsContent>
         </Tabs>
