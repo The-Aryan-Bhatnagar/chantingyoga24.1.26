@@ -11,6 +11,7 @@ const Header = () => {
     { path: "/", label: "Home" },
     { path: "/about", label: "About Us" },
     { path: "/yoga-wellness", label: "Yoga & Wellness" },
+    { path: "/yoga-poses", label: "Yoga Poses" },
     { path: "/services", label: "Services" },
     { path: "/media", label: "Media" },
     { path: "/research", label: "Research" },
