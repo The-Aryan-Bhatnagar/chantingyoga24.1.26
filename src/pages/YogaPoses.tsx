@@ -15,6 +15,12 @@ import shoulderPose from "@/assets/poses/shoulder-pose.jpg";
 import locustPose from "@/assets/poses/locust-pose.jpg";
 import mahaveerAsana1 from "@/assets/poses/mahaveer-asana-1.jpg";
 import mahaveerAsana2 from "@/assets/poses/mahaveer-asana-2.jpg";
+import twistedCobraPose3 from "@/assets/poses/twisted-cobra-pose-3.jpg";
+import twistedCobraPose from "@/assets/poses/twisted-cobra-pose.jpg";
+import warriorPose1 from "@/assets/poses/warrior-pose-1.jpg";
+import bowPose2 from "@/assets/poses/bow-pose-2.jpg";
+import bridgePose from "@/assets/poses/bridge-pose.jpg";
+import bridgePose1 from "@/assets/poses/bridge-pose-1.jpg";
 
 interface YogaPose {
   id: string;
@@ -277,6 +283,132 @@ const yogaPoses: YogaPose[] = [
       "Keep the back leg strong and straight",
       "Engage the core for stability",
       "Breathe steadily and hold",
+    ],
+  },
+  {
+    id: "twisted-cobra-pose-3",
+    name: "Twisted Cobra Pose 3",
+    sanskritName: "Tirak Bhujangasana",
+    image: twistedCobraPose3,
+    description: "Twisted Cobra Pose is a variation of the classic Cobra that adds a spinal twist. This pose combines the benefits of a backbend with a gentle twist, improving spinal mobility and flexibility.",
+    benefits: [
+      "Increases spinal flexibility",
+      "Massages abdominal organs",
+      "Opens the chest and shoulders",
+      "Improves digestion",
+      "Relieves lower back tension",
+    ],
+    steps: [
+      "Lie face down on your mat",
+      "Place palms under shoulders",
+      "Inhale and lift your chest off the floor",
+      "Gently twist your torso to one side",
+      "Hold and breathe, then switch sides",
+    ],
+  },
+  {
+    id: "twisted-cobra-pose",
+    name: "Twisted Cobra Pose",
+    sanskritName: "Tirak Bhujangasana",
+    image: twistedCobraPose,
+    description: "This classic Twisted Cobra variation opens the chest while creating a gentle spinal rotation. The twist helps to detoxify the body and improve spinal health.",
+    benefits: [
+      "Strengthens the spine",
+      "Stimulates internal organs",
+      "Opens the heart center",
+      "Reduces stress and fatigue",
+      "Improves posture",
+    ],
+    steps: [
+      "Begin in prone position",
+      "Prop yourself up on your forearms or hands",
+      "Lift the chest and twist gently to the side",
+      "Keep hips grounded on the mat",
+      "Breathe deeply and hold",
+    ],
+  },
+  {
+    id: "warrior-pose-1",
+    name: "Warrior Pose 1",
+    sanskritName: "Virabhadrasana I",
+    image: warriorPose1,
+    description: "Warrior Pose 1 is a foundational standing pose that builds strength, stamina, and focus. Named after the fierce warrior Virabhadra, this pose embodies courage and determination.",
+    benefits: [
+      "Strengthens legs and ankles",
+      "Stretches hip flexors and groin",
+      "Opens the chest and lungs",
+      "Builds stamina and concentration",
+      "Improves balance",
+    ],
+    steps: [
+      "Step one foot back into a lunge position",
+      "Turn back foot at 45-degree angle",
+      "Bend front knee over ankle",
+      "Raise arms overhead, palms facing",
+      "Square hips forward and hold",
+    ],
+  },
+  {
+    id: "bow-pose-2",
+    name: "Bow Pose",
+    sanskritName: "Dhanurasana",
+    image: bowPose2,
+    description: "Bow Pose is an energizing backbend that resembles an archer's bow. This powerful pose opens the entire front body while strengthening the back muscles.",
+    benefits: [
+      "Stretches the entire front body",
+      "Strengthens back muscles",
+      "Improves posture",
+      "Stimulates abdominal organs",
+      "Increases energy and vitality",
+    ],
+    steps: [
+      "Lie on your stomach",
+      "Bend knees and reach back to hold ankles",
+      "Inhale and lift chest and thighs off floor",
+      "Pull feet toward buttocks to deepen",
+      "Hold and breathe, then release gently",
+    ],
+  },
+  {
+    id: "bridge-pose",
+    name: "Bridge Pose",
+    sanskritName: "Setubandhasana",
+    image: bridgePose,
+    description: "Bridge Pose is a restorative backbend that creates a bridge shape with the body. This pose opens the chest and stretches the spine while strengthening the legs and glutes.",
+    benefits: [
+      "Stretches the chest and spine",
+      "Calms the brain and reduces stress",
+      "Stimulates thyroid and lungs",
+      "Strengthens legs and buttocks",
+      "Reduces anxiety and fatigue",
+    ],
+    steps: [
+      "Lie on your back with knees bent",
+      "Place feet flat on floor, hip-width apart",
+      "Arms alongside body, palms down",
+      "Press into feet and lift hips toward ceiling",
+      "Hold and breathe deeply",
+    ],
+  },
+  {
+    id: "bridge-pose-1",
+    name: "Bridge Pose 1",
+    sanskritName: "Setubandhasana",
+    image: bridgePose1,
+    description: "This variation of Bridge Pose emphasizes the arch in the back while keeping the shoulders grounded. It's excellent for opening the heart center and stretching the hip flexors.",
+    benefits: [
+      "Opens the hip flexors",
+      "Strengthens the back body",
+      "Improves spinal flexibility",
+      "Calms the nervous system",
+      "Prepares for deeper backbends",
+    ],
+    steps: [
+      "Lie on your back with knees bent",
+      "Keep feet hip-width apart, close to buttocks",
+      "Press through feet and lift hips high",
+      "Keep shoulders and head on the mat",
+      "Hold and breathe steadily",
     ],
   },
 ];
