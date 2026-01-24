@@ -30,6 +30,12 @@ import crocodilePose5 from "@/assets/poses/crocodile-pose-5.jpg";
 import locustPose2 from "@/assets/poses/locust-pose-2.jpg";
 import locustPosePurna from "@/assets/poses/locust-pose-purna.jpg";
 import mahaveerAsana3 from "@/assets/poses/mahaveer-asana-3.jpg";
+import rabbitPose1 from "@/assets/poses/rabbit-pose-1.jpg";
+import rabbitPose2 from "@/assets/poses/rabbit-pose-2.jpg";
+import twistedCobraPose4 from "@/assets/poses/twisted-cobra-pose-4.jpg";
+import warriorPose3 from "@/assets/poses/warrior-pose-3.jpg";
+import bowPose from "@/assets/poses/bow-pose.jpg";
+import cobraPose1 from "@/assets/poses/cobra-pose-1.jpg";
 
 interface YogaPose {
   id: string;
@@ -649,6 +655,132 @@ const yogaPoses: YogaPose[] = [
       "Keep knees under hips",
       "Move through cat-cow movements",
       "Coordinate breath with movement",
+    ],
+  },
+  {
+    id: "rabbit-pose-1",
+    name: "Rabbit Pose 1",
+    sanskritName: "Shashankasana",
+    image: rabbitPose1,
+    description: "Rabbit Pose or Shashankasana is a gentle forward fold that stretches the spine and calms the mind. This restorative pose helps release tension in the back and neck.",
+    benefits: [
+      "Stretches the spine and back muscles",
+      "Calms the nervous system",
+      "Relieves stress and anxiety",
+      "Improves digestion",
+      "Opens the hips gently",
+    ],
+    steps: [
+      "Kneel on your mat with knees together",
+      "Sit back on your heels",
+      "Fold forward from the hips",
+      "Rest forehead on the floor",
+      "Relax arms alongside the body",
+    ],
+  },
+  {
+    id: "rabbit-pose-2",
+    name: "Rabbit Pose 2",
+    sanskritName: "Shashankasana",
+    image: rabbitPose2,
+    description: "This variation of Rabbit Pose deepens the stretch in the spine while maintaining a restful, grounding quality. It's excellent for relaxation and introspection.",
+    benefits: [
+      "Deepens spinal stretch",
+      "Promotes relaxation",
+      "Reduces mental fatigue",
+      "Stretches the shoulders",
+      "Encourages introspection",
+    ],
+    steps: [
+      "From kneeling position, fold forward",
+      "Extend arms forward on the mat",
+      "Rest forehead on the ground",
+      "Keep hips over the knees",
+      "Breathe deeply and relax",
+    ],
+  },
+  {
+    id: "twisted-cobra-pose-4",
+    name: "Twisted Cobra Pose 4",
+    sanskritName: "Tirak Bhujangasana",
+    image: twistedCobraPose4,
+    description: "Twisted Cobra Pose 4 is a deeper variation that combines a gentle backbend with a spinal twist. This pose improves flexibility and massages the internal organs.",
+    benefits: [
+      "Increases spinal mobility",
+      "Massages digestive organs",
+      "Opens chest and shoulders",
+      "Strengthens back muscles",
+      "Reduces lower back tension",
+    ],
+    steps: [
+      "Lie face down on your mat",
+      "Place palms under shoulders",
+      "Lift chest and twist to one side",
+      "Keep hips grounded",
+      "Hold and breathe, then switch sides",
+    ],
+  },
+  {
+    id: "warrior-pose-3",
+    name: "Warrior Pose 3",
+    sanskritName: "Virabhadrasana III",
+    image: warriorPose3,
+    description: "Warrior Pose 3 is a dynamic standing pose that builds strength, balance, and focus. With arms extended forward, it challenges stability while energizing the entire body.",
+    benefits: [
+      "Strengthens legs and core",
+      "Improves balance and coordination",
+      "Builds mental focus",
+      "Opens the hips",
+      "Energizes the body",
+    ],
+    steps: [
+      "Stand in a lunge position",
+      "Extend arms forward, parallel to floor",
+      "Bend front knee over ankle",
+      "Keep back leg strong",
+      "Gaze forward and hold",
+    ],
+  },
+  {
+    id: "bow-pose",
+    name: "Bow Pose",
+    sanskritName: "Dhanurasana",
+    image: bowPose,
+    description: "Bow Pose is an energizing backbend that resembles an archer's bow. This powerful pose stretches the entire front body while strengthening the back.",
+    benefits: [
+      "Stretches the entire front body",
+      "Strengthens back muscles",
+      "Improves posture",
+      "Stimulates abdominal organs",
+      "Increases energy and vitality",
+    ],
+    steps: [
+      "Lie on your stomach",
+      "Bend knees and reach back to hold ankles",
+      "Inhale and lift chest and thighs",
+      "Pull feet toward buttocks",
+      "Hold and breathe deeply",
+    ],
+  },
+  {
+    id: "cobra-pose-1",
+    name: "Cobra Pose 1",
+    sanskritName: "Bhujangasana",
+    image: cobraPose1,
+    description: "Cobra Pose 1 is the foundation of the Cobra sequence. This gentle backbend strengthens the spine and opens the chest while keeping the lower body grounded.",
+    benefits: [
+      "Strengthens the spine",
+      "Opens chest and lungs",
+      "Improves posture",
+      "Reduces stress",
+      "Prepares for deeper backbends",
+    ],
+    steps: [
+      "Lie face down with legs extended",
+      "Place palms beside chest",
+      "Keep elbows close to body",
+      "Press into hands and lift chest slightly",
+      "Keep lower body grounded",
     ],
   },
 ];
