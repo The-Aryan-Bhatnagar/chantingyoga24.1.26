@@ -18,6 +18,7 @@ import Meditation from "./pages/Meditation";
 import Pranayam from "./pages/Pranayam";
 import YogaDiet from "./pages/YogaDiet";
 import YogaTypes from "./pages/YogaTypes";
+import YogaPoses from "./pages/YogaPoses";
 import AgeingYoga from "./pages/AgeingYoga";
 import IllnessYoga from "./pages/IllnessYoga";
 
@@ -66,6 +67,7 @@ const App = () => (
             <Route path="pranayam" element={<Pranayam />} />
             <Route path="yoga-diet" element={<YogaDiet />} />
             <Route path="yoga-types" element={<YogaTypes />} />
+            <Route path="yoga-poses" element={<YogaPoses />} />
             <Route path="ageing-yoga" element={<AgeingYoga />} />
             <Route path="illness-yoga" element={<IllnessYoga />} />
             

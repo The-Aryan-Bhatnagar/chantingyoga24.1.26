@@ -8,6 +8,7 @@ const Footer = () => {
       links: [
         { label: "Meditation", path: "/meditation" },
         { label: "Pranayam", path: "/pranayam" },
+        { label: "Yoga Poses", path: "/yoga-poses" },
         { label: "Yoga Diet", path: "/yoga-diet" },
         { label: "Yoga Types", path: "/yoga-types" },
         { label: "Ageing Yoga", path: "/ageing-yoga" },
