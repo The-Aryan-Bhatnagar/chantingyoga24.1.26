@@ -36,6 +36,14 @@ import twistedCobraPose4 from "@/assets/poses/twisted-cobra-pose-4.jpg";
 import warriorPose3 from "@/assets/poses/warrior-pose-3.jpg";
 import bowPose from "@/assets/poses/bow-pose.jpg";
 import cobraPose1 from "@/assets/poses/cobra-pose-1.jpg";
+import crocodilePose3 from "@/assets/poses/crocodile-pose-3.jpg";
+import chairPose2 from "@/assets/poses/chair-pose-2.jpg";
+import mahaveerAsana4 from "@/assets/poses/mahaveer-asana-4.jpg";
+import catPose1 from "@/assets/poses/cat-pose-1.jpg";
+import twistedCobraPose2 from "@/assets/poses/twisted-cobra-pose-2.jpg";
+import twistedCobraPose5 from "@/assets/poses/twisted-cobra-pose-5.jpg";
+import warriorPose2 from "@/assets/poses/warrior-pose-2.jpg";
+import warriorPose4 from "@/assets/poses/warrior-pose-4.jpg";
 
 interface YogaPose {
   id: string;
@@ -781,6 +789,174 @@ const yogaPoses: YogaPose[] = [
       "Keep elbows close to body",
       "Press into hands and lift chest slightly",
       "Keep lower body grounded",
+    ],
+  },
+  {
+    id: "crocodile-pose-3",
+    name: "Crocodile Pose 3",
+    sanskritName: "Makarasana",
+    image: crocodilePose3,
+    description: "Crocodile Pose 3 is a dynamic variation that incorporates leg movement while maintaining the relaxed prone position. This variation helps release tension in the lower back and hips.",
+    benefits: [
+      "Releases lower back tension",
+      "Opens the hip flexors",
+      "Promotes deep relaxation",
+      "Strengthens the lower back",
+      "Calms the nervous system",
+    ],
+    steps: [
+      "Lie face down on your mat",
+      "Rest your chin on your crossed forearms",
+      "Bend one knee and lift the leg",
+      "Keep the other leg extended and relaxed",
+      "Breathe deeply and hold",
+    ],
+  },
+  {
+    id: "chair-pose-2",
+    name: "Chair Pose 2",
+    sanskritName: "Utkatasana",
+    image: chairPose2,
+    description: "Chair Pose 2 is an elevated variation where the arms reach high overhead while maintaining the seated position. This powerful pose builds strength and stamina.",
+    benefits: [
+      "Strengthens thighs and ankles",
+      "Tones the core muscles",
+      "Improves posture",
+      "Builds stamina",
+      "Opens the shoulders",
+    ],
+    steps: [
+      "Stand with feet together or hip-width apart",
+      "Bend knees and lower hips as if sitting",
+      "Reach arms overhead",
+      "Keep weight in heels",
+      "Hold and breathe deeply",
+    ],
+  },
+  {
+    id: "mahaveer-asana-4",
+    name: "Mahaveer Asana 4",
+    sanskritName: "Virabhadrasana",
+    image: mahaveerAsana4,
+    description: "Mahaveer Asana 4 is a warrior variation with arms extended horizontally. This pose embodies strength and balance while building powerful legs and core stability.",
+    benefits: [
+      "Strengthens legs and glutes",
+      "Opens the hips",
+      "Improves balance",
+      "Builds core strength",
+      "Enhances focus and concentration",
+    ],
+    steps: [
+      "Stand with feet wide apart",
+      "Turn one foot out 90 degrees",
+      "Bend the front knee over ankle",
+      "Extend arms out to the sides",
+      "Hold and gaze forward",
+    ],
+  },
+  {
+    id: "margariasana-1",
+    name: "Margariasana 1",
+    sanskritName: "Marjariasana",
+    image: catPose1,
+    description: "Margariasana 1 (Cat Pose) is a gentle spinal stretch performed on all fours. This variation focuses on the neutral tabletop position, preparing the spine for movement.",
+    benefits: [
+      "Stretches the spine",
+      "Improves posture",
+      "Releases back tension",
+      "Strengthens wrists and shoulders",
+      "Calms the mind",
+    ],
+    steps: [
+      "Start on all fours in tabletop position",
+      "Keep hands under shoulders",
+      "Keep knees under hips",
+      "Maintain a neutral spine",
+      "Breathe steadily",
+    ],
+  },
+  {
+    id: "twisted-cobra-pose-2",
+    name: "Twisted Cobra Pose 2",
+    sanskritName: "Tirak Bhujangasana",
+    image: twistedCobraPose2,
+    description: "Twisted Cobra Pose 2 combines a gentle backbend with spinal rotation. This variation opens the chest while improving spinal mobility and flexibility.",
+    benefits: [
+      "Improves spinal flexibility",
+      "Opens the chest",
+      "Strengthens the back",
+      "Massages internal organs",
+      "Reduces stress",
+    ],
+    steps: [
+      "Lie face down on your mat",
+      "Place palms beside chest",
+      "Lift chest gently off the floor",
+      "Twist torso to one side",
+      "Hold and breathe deeply",
+    ],
+  },
+  {
+    id: "twisted-cobra-pose-5",
+    name: "Twisted Cobra Pose 5",
+    sanskritName: "Tirak Bhujangasana",
+    image: twistedCobraPose5,
+    description: "Twisted Cobra Pose 5 is an advanced variation with a deeper backbend and upward gaze. This pose opens the heart center while stretching the entire front body.",
+    benefits: [
+      "Deep chest opening",
+      "Strengthens the spine",
+      "Improves posture",
+      "Stimulates thyroid",
+      "Energizes the body",
+    ],
+    steps: [
+      "Lie face down on your mat",
+      "Place palms beside chest",
+      "Press into hands and lift chest high",
+      "Look upward gently",
+      "Hold and breathe deeply",
+    ],
+  },
+  {
+    id: "warrior-pose-2",
+    name: "Warrior Pose 2",
+    sanskritName: "Virabhadrasana II",
+    image: warriorPose2,
+    description: "Warrior Pose 2 is a powerful standing pose with a deep lunge and hands on hips. This variation builds leg strength while opening the hips.",
+    benefits: [
+      "Strengthens legs and ankles",
+      "Opens the hips",
+      "Builds stamina",
+      "Improves concentration",
+      "Grounds and centers the body",
+    ],
+    steps: [
+      "Stand with feet wide apart",
+      "Turn front foot out 90 degrees",
+      "Bend front knee over ankle",
+      "Place hands on hips",
+      "Hold and breathe steadily",
+    ],
+  },
+  {
+    id: "warrior-pose-4",
+    name: "Warrior Pose 4",
+    sanskritName: "Virabhadrasana",
+    image: warriorPose4,
+    description: "Warrior Pose 4 features arms extended forward while maintaining the powerful lunge position. This variation challenges balance and builds upper body strength.",
+    benefits: [
+      "Strengthens entire body",
+      "Improves balance",
+      "Opens the chest",
+      "Builds focus",
+      "Increases stamina",
+    ],
+    steps: [
+      "Stand with feet wide apart",
+      "Turn front foot out 90 degrees",
+      "Bend front knee over ankle",
+      "Extend arms forward",
+      "Hold and gaze ahead",
     ],
   },
 ];
