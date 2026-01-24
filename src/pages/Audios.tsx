@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Play, Pause, Volume2, Clock } from "lucide-react";
+import { Play, Pause, Clock, ArrowLeft } from "lucide-react";
 import { useState, useRef } from "react";
 
 const Audios = () => {
@@ -74,6 +74,13 @@ const Audios = () => {
       {/* Hero Section */}
       <section className="relative py-20 px-4 bg-gradient-to-br from-primary/20 to-accent/20">
         <div className="container mx-auto text-center max-w-4xl">
+          <Link 
+            to="/media" 
+            className="inline-flex items-center gap-2 text-primary hover:text-primary/80 mb-4 transition-colors"
+          >
+            <ArrowLeft className="h-4 w-4" />
+            Back to Media
+          </Link>
           <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 animate-fade-in-up">
             Audio Sessions
           </h1>
