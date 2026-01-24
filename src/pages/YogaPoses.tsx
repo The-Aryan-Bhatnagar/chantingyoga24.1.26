@@ -21,6 +21,12 @@ import warriorPose1 from "@/assets/poses/warrior-pose-1.jpg";
 import bowPose2 from "@/assets/poses/bow-pose-2.jpg";
 import bridgePose from "@/assets/poses/bridge-pose.jpg";
 import bridgePose1 from "@/assets/poses/bridge-pose-1.jpg";
+import bridgePose2 from "@/assets/poses/bridge-pose-2.jpg";
+import camelPose2 from "@/assets/poses/camel-pose-2.jpg";
+import catPose from "@/assets/poses/cat-pose.jpg";
+import cobraPose2 from "@/assets/poses/cobra-pose-2.jpg";
+import cobraPose3 from "@/assets/poses/cobra-pose-3.jpg";
+import crocodilePose5 from "@/assets/poses/crocodile-pose-5.jpg";
 
 interface YogaPose {
   id: string;
@@ -409,6 +415,132 @@ const yogaPoses: YogaPose[] = [
       "Press through feet and lift hips high",
       "Keep shoulders and head on the mat",
       "Hold and breathe steadily",
+    ],
+  },
+  {
+    id: "bridge-pose-2",
+    name: "Bridge Pose 2",
+    sanskritName: "Setubandhasana",
+    image: bridgePose2,
+    description: "This deeper variation of Bridge Pose creates a higher arch and provides an intense stretch for the spine and hip flexors while strengthening the posterior chain.",
+    benefits: [
+      "Deepens hip flexor stretch",
+      "Strengthens glutes and hamstrings",
+      "Opens the chest fully",
+      "Improves back flexibility",
+      "Energizes the body",
+    ],
+    steps: [
+      "Lie on your back with knees bent",
+      "Place feet close to buttocks",
+      "Press into feet and lift hips as high as possible",
+      "Support lower back with hands if needed",
+      "Hold and breathe deeply",
+    ],
+  },
+  {
+    id: "camel-pose-2",
+    name: "Camel Pose 2",
+    sanskritName: "Usthasana",
+    image: camelPose2,
+    description: "Camel Pose 2 is an intermediate backbend where the practitioner begins to reach back toward the heels. This pose deeply opens the chest and stretches the entire front body.",
+    benefits: [
+      "Opens the chest and heart",
+      "Stretches hip flexors",
+      "Strengthens back muscles",
+      "Improves spinal flexibility",
+      "Stimulates the throat chakra",
+    ],
+    steps: [
+      "Kneel with knees hip-width apart",
+      "Tuck toes under for support",
+      "Place hands on lower back",
+      "Lean back and begin reaching toward heels",
+      "Keep hips over knees and breathe",
+    ],
+  },
+  {
+    id: "cat-pose-alt",
+    name: "Cat Pose",
+    sanskritName: "Marjaryasana",
+    image: catPose,
+    description: "Cat Pose is a fundamental yoga pose that gently stretches the spine and releases tension in the back. This flowing movement helps to warm up the body and calm the mind.",
+    benefits: [
+      "Stretches the back and spine",
+      "Releases neck tension",
+      "Improves spinal flexibility",
+      "Calms the mind",
+      "Massages internal organs",
+    ],
+    steps: [
+      "Start on hands and knees",
+      "Align wrists under shoulders, knees under hips",
+      "Exhale and round your spine upward",
+      "Tuck chin toward chest",
+      "Draw belly button toward spine",
+    ],
+  },
+  {
+    id: "cobra-pose-2",
+    name: "Cobra Pose 2",
+    sanskritName: "Bhujangasana",
+    image: cobraPose2,
+    description: "Cobra Pose 2 is a gentle backbend that strengthens the spine and opens the chest. This variation uses the arms for support while keeping the lower body grounded.",
+    benefits: [
+      "Strengthens the spine",
+      "Opens the chest and lungs",
+      "Firms the buttocks",
+      "Reduces stress and fatigue",
+      "Improves posture",
+    ],
+    steps: [
+      "Lie face down with legs extended",
+      "Place palms under shoulders",
+      "Press into hands and lift chest",
+      "Keep elbows close to body",
+      "Gaze forward and breathe",
+    ],
+  },
+  {
+    id: "cobra-pose-3",
+    name: "Cobra Pose 3",
+    sanskritName: "Bhujangasana",
+    image: cobraPose3,
+    description: "Cobra Pose 3 is a deeper expression of the classic Cobra, creating a more pronounced backbend. This pose builds strength in the back while stretching the entire front body.",
+    benefits: [
+      "Deepens spinal extension",
+      "Strengthens back muscles",
+      "Opens the heart center",
+      "Increases lung capacity",
+      "Energizes the body",
+    ],
+    steps: [
+      "Lie prone with legs together",
+      "Place palms beside chest",
+      "Inhale and lift chest higher",
+      "Straighten arms as much as comfortable",
+      "Keep shoulders down and breathe",
+    ],
+  },
+  {
+    id: "crocodile-pose-5",
+    name: "Crocodile Pose 5",
+    sanskritName: "Makarasana",
+    image: crocodilePose5,
+    description: "This dynamic variation of Crocodile Pose incorporates a bent leg position, adding a gentle hip opener to the relaxing prone posture. Great for releasing tension while staying restful.",
+    benefits: [
+      "Opens the hips gently",
+      "Releases lower back tension",
+      "Promotes deep relaxation",
+      "Encourages diaphragmatic breathing",
+      "Calms the nervous system",
+    ],
+    steps: [
+      "Lie face down on your mat",
+      "Rest head on crossed forearms",
+      "Bend one leg to the side",
+      "Keep the other leg extended",
+      "Relax completely and breathe deeply",
     ],
   },
 ];
