@@ -27,6 +27,9 @@ import catPose from "@/assets/poses/cat-pose.jpg";
 import cobraPose2 from "@/assets/poses/cobra-pose-2.jpg";
 import cobraPose3 from "@/assets/poses/cobra-pose-3.jpg";
 import crocodilePose5 from "@/assets/poses/crocodile-pose-5.jpg";
+import locustPose2 from "@/assets/poses/locust-pose-2.jpg";
+import locustPosePurna from "@/assets/poses/locust-pose-purna.jpg";
+import mahaveerAsana3 from "@/assets/poses/mahaveer-asana-3.jpg";
 
 interface YogaPose {
   id: string;
@@ -541,6 +544,111 @@ const yogaPoses: YogaPose[] = [
       "Bend one leg to the side",
       "Keep the other leg extended",
       "Relax completely and breathe deeply",
+    ],
+  },
+  {
+    id: "locust-pose-ardh-1",
+    name: "Locust Pose (ArdhSalabhasana) 1",
+    sanskritName: "Ardh Salabhasana",
+    image: locustPose,
+    description: "Ardh Salabhasana or Half Locust Pose is a gentle backbend where one leg is lifted at a time. This pose strengthens the lower back and prepares the body for the full Locust Pose.",
+    benefits: [
+      "Strengthens the lower back muscles",
+      "Tones the buttocks and thighs",
+      "Improves digestion",
+      "Builds core stability",
+      "Prepares for deeper backbends",
+    ],
+    steps: [
+      "Lie face down with arms alongside body",
+      "Rest your chin on the mat",
+      "Keep one leg straight on the ground",
+      "Inhale and lift the other leg without bending the knee",
+      "Hold for a few breaths, then switch sides",
+    ],
+  },
+  {
+    id: "locust-pose-ardh-2",
+    name: "Locust Pose (ArdhSalabhasana) 2",
+    sanskritName: "Ardh Salabhasana",
+    image: locustPose2,
+    description: "This variation of Half Locust Pose involves lifting the alternate leg while maintaining stability in the hips. It helps build strength symmetrically in both sides of the back.",
+    benefits: [
+      "Balances strength in both legs",
+      "Strengthens the posterior chain",
+      "Improves hip stability",
+      "Tones the gluteal muscles",
+      "Enhances body awareness",
+    ],
+    steps: [
+      "Lie face down on your mat",
+      "Rest forehead or chin on the floor",
+      "Keep arms alongside the body",
+      "Lift one leg while keeping hips grounded",
+      "Hold and breathe, then switch legs",
+    ],
+  },
+  {
+    id: "locust-pose-purna",
+    name: "Locust Pose (Salabhasana Purna) 2",
+    sanskritName: "Purna Salabhasana",
+    image: locustPosePurna,
+    description: "Purna Salabhasana or Full Locust Pose is the complete expression where both legs are lifted together. This powerful backbend builds tremendous strength in the entire back body.",
+    benefits: [
+      "Strengthens the entire back",
+      "Tones legs and buttocks",
+      "Stimulates abdominal organs",
+      "Improves posture significantly",
+      "Builds stamina and endurance",
+    ],
+    steps: [
+      "Lie face down with arms at your sides",
+      "Rest forehead on the mat",
+      "Keep both legs straight and together",
+      "Inhale and lift both legs simultaneously",
+      "Hold for 5-10 breaths, then release",
+    ],
+  },
+  {
+    id: "mahaveer-asana-3",
+    name: "Mahaveer Asana 3",
+    sanskritName: "Virabhadrasana",
+    image: mahaveerAsana3,
+    description: "Mahaveer Asana 3 is a powerful warrior stance with arms extended parallel to the ground. This pose builds strength, balance, and concentration while embodying the spirit of a warrior.",
+    benefits: [
+      "Strengthens legs and core",
+      "Opens the hips and chest",
+      "Builds mental focus",
+      "Improves balance and stability",
+      "Increases stamina",
+    ],
+    steps: [
+      "Stand with feet wide apart",
+      "Turn one foot out 90 degrees",
+      "Bend the front knee over the ankle",
+      "Extend both arms out to sides, palms down",
+      "Gaze over the front hand and hold",
+    ],
+  },
+  {
+    id: "margariasana-2",
+    name: "Margariasana 2",
+    sanskritName: "Marjaryasana",
+    image: catPose2,
+    description: "Margariasana 2 is a variation of Cat Pose that emphasizes the arching of the spine. This gentle movement warms up the spine and prepares the body for deeper movements.",
+    benefits: [
+      "Warms up the spine",
+      "Releases back tension",
+      "Improves spinal flexibility",
+      "Calms the nervous system",
+      "Prepares body for practice",
+    ],
+    steps: [
+      "Start on hands and knees",
+      "Align wrists under shoulders",
+      "Keep knees under hips",
+      "Move through cat-cow movements",
+      "Coordinate breath with movement",
     ],
   },
 ];
