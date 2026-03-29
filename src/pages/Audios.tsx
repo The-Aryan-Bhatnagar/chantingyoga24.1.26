@@ -1,81 +1,29 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Play, Pause, Clock, ArrowLeft } from "lucide-react";
-import { useState, useRef } from "react";
+import { Music, ArrowLeft } from "lucide-react";
 
 const Audios = () => {
-  const [playingIndex, setPlayingIndex] = useState<number | null>(null);
-  const audioRefs = useRef<(HTMLAudioElement | null)[]>([]);
-
   const audioSessions = [
-    {
-      title: "Morning Meditation",
-      description: "Start your day with clarity and intention",
-      duration: "10 min",
-      category: "Meditation",
-      src: "/audio/meditation.mp3",
-    },
-    {
-      title: "Deep Relaxation",
-      description: "Guided relaxation for stress relief",
-      duration: "15 min",
-      category: "Relaxation",
-      src: "/audio/stress.mp3",
-    },
-    {
-      title: "Sleep Yoga Nidra",
-      description: "Drift into peaceful sleep with guided relaxation",
-      duration: "20 min",
-      category: "Sleep",
-      src: "/audio/sleep.mp3",
-    },
-    {
-      title: "Om Chanting",
-      description: "Connect with the primordial sound of the universe",
-      duration: "10 min",
-      category: "Chanting",
-      src: "/audio/chanting.mp3",
-    },
-    {
-      title: "Pranayama Practice",
-      description: "Guided breathing exercises for energy and calm",
-      duration: "12 min",
-      category: "Pranayama",
-      src: "/audio/anxiety-depression.mp3",
-    },
-    {
-      title: "Healing Mantras",
-      description: "Sacred mantras for healing and transformation",
-      duration: "15 min",
-      category: "Chanting",
-      src: "/audio/backache.mp3",
-    },
+    { title: "Anxiety & Depression Relief", description: "Calming chants for mental peace", src: "/audio/anxiety-depression.mp3" },
+    { title: "Backache Relief", description: "Healing sounds for back pain", src: "/audio/backache.mp3" },
+    { title: "Cancer Support", description: "Supportive meditation for healing", src: "/audio/cancer.mp3" },
+    { title: "Chanting Practice", description: "Traditional yoga chanting", src: "/audio/chanting.mp3" },
+    { title: "Headache Relief", description: "Soothing sounds for headaches", src: "/audio/headache.mp3" },
+    { title: "Hypertension Management", description: "Calming meditation for blood pressure", src: "/audio/hypertension.mp3" },
+    { title: "General Meditation", description: "Deep meditation practice", src: "/audio/meditation.mp3" },
+    { title: "Obesity Management", description: "Motivational healing sounds", src: "/audio/obesity.mp3" },
+    { title: "Sleep Enhancement", description: "Peaceful sounds for better sleep", src: "/audio/sleep.mp3" },
+    { title: "Stress Relief", description: "Stress-busting meditation", src: "/audio/stress.mp3" },
   ];
-
-  const handlePlayPause = (index: number) => {
-    const audio = audioRefs.current[index];
-    
-    if (playingIndex === index) {
-      audio?.pause();
-      setPlayingIndex(null);
-    } else {
-      // Pause any currently playing audio
-      if (playingIndex !== null) {
-        audioRefs.current[playingIndex]?.pause();
-      }
-      audio?.play();
-      setPlayingIndex(index);
-    }
-  };
 
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
       <section className="relative py-20 px-4 bg-gradient-to-br from-primary/20 to-accent/20">
         <div className="container mx-auto text-center max-w-4xl">
-          <Link 
-            to="/media" 
+          <Link
+            to="/media"
             className="inline-flex items-center gap-2 text-primary hover:text-primary/80 mb-4 transition-colors"
           >
             <ArrowLeft className="h-4 w-4" />
@@ -92,48 +40,22 @@ const Audios = () => {
 
       {/* Audio Grid */}
       <section className="py-16 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="container mx-auto max-w-5xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {audioSessions.map((session, index) => (
-              <Card key={index} className="animate-fade-in hover:shadow-lg transition-shadow">
+              <Card key={index} className="hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <div className="flex items-center justify-between">
-                    <span className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full">
-                      {session.category}
-                    </span>
-                    <div className="flex items-center gap-1 text-sm text-muted-foreground">
-                      <Clock className="h-4 w-4" />
-                      {session.duration}
-                    </div>
-                  </div>
-                  <CardTitle className="text-xl mt-3">{session.title}</CardTitle>
+                  <CardTitle className="flex items-center gap-2 text-xl">
+                    <Music className="w-5 h-5 text-primary" />
+                    {session.title}
+                  </CardTitle>
+                  <CardDescription>{session.description}</CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-4">
-                  <CardDescription className="text-base">
-                    {session.description}
-                  </CardDescription>
-                  <audio
-                    ref={(el) => (audioRefs.current[index] = el)}
-                    src={session.src}
-                    onEnded={() => setPlayingIndex(null)}
-                  />
-                  <Button
-                    onClick={() => handlePlayPause(index)}
-                    className="w-full"
-                    variant={playingIndex === index ? "secondary" : "default"}
-                  >
-                    {playingIndex === index ? (
-                      <>
-                        <Pause className="h-4 w-4 mr-2" />
-                        Pause
-                      </>
-                    ) : (
-                      <>
-                        <Play className="h-4 w-4 mr-2" />
-                        Play
-                      </>
-                    )}
-                  </Button>
+                <CardContent>
+                  <audio controls className="w-full">
+                    <source src={session.src} type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                  </audio>
                 </CardContent>
               </Card>
             ))}
